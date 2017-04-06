@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="mydata" value=0>
+
+<script>
+function check(){
+var x
+x = document.getElementById("mydata").value;
+x = parseInt(x);
+if (x < 60){
+document.getElementById("result").innerHTML = "FAILED";
+}
+if (x >= 60){
+document.getElementById("result").innerHTML = "PASSED";
+}
+}
+</script>
+
+<br><br>
+<button type="button" onclick="check()">Try!</button>
+<br><br>
+<output id="result"></output>
+
+</body>
+</html> 

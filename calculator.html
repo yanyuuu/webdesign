@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="mydata" value=0>
+<input type="number" id="mydata2" value=0>
+
+<script>
+function plus(){
+var x, y, z
+x = document.getElementById("mydata").value;
+y = document.getElementById("mydata2").value;
+z = parseInt(x) + parseInt(y);
+document.getElementById("result").innerHTML = z;
+}
+
+function minus(){
+var x, y, z
+x = document.getElementById("mydata").value;
+y = document.getElementById("mydata2").value;
+z = parseInt(x) - parseInt(y);
+document.getElementById("result").innerHTML = z;
+}
+
+function mul(){
+var x, y, z
+x = document.getElementById("mydata").value;
+y = document.getElementById("mydata2").value;
+z = parseInt(x) * parseInt(y);
+document.getElementById("result").innerHTML = z;
+}
+
+function div(){
+var x, y, z
+x = document.getElementById("mydata").value;
+y = document.getElementById("mydata2").value;
+z = parseInt(x) / parseInt(y);
+document.getElementById("result").innerHTML = z;
+}
+
+function reset(){
+document.getElementById("mydata").value = 0;
+document.getElementById("mydata2").value = 0;
+document.getElementById("result").innerHTML = 0;
+}
+</script>
+
+<br><br>
+<button type="button" onclick="plus()">+</button>
+<button type="button" onclick="minus()">-</button>
+<button type="button" onclick="mul()">*</button>
+<button type="button" onclick="div()">/</button>
+<button type="button" onclick="reset()">c</button>
+<br><br>
+ANS:
+<output id="result"></output>
+
+</body>
+</html> 
